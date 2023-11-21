@@ -39,6 +39,8 @@
         "title": "tauri-react",
         "width": 640,
         "height": 360,
+        "minWidth": 640,
+        "minHeight": 360,
 
 
         "alwaysOnTop": true

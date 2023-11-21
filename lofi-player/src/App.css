@@ -1,14 +1,15 @@
-html {
-	font-size: 16px;
-	background-color: #ffd6fe;
+body {
+	margin: 0;
 	align-items: center;
 	text-align: center;
+	font-size: 16px;
+	background-color: #ffd6fe;
 }
 
 table {
 	border-collapse: collapse;
-	width: 640px;
-	height: 360px;
+	min-width: 640px;
+	min-height: 360px;
 }
 
 th, td {
