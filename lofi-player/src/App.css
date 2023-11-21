@@ -1,0 +1,17 @@
+html {
+	font-size: 16px;
+	background-color: #ffd6fe;
+	align-items: center;
+	text-align: center;
+}
+
+table {
+	border-collapse: collapse;
+	width: 640px;
+	height: 360px;
+}
+
+th, td {
+	border: 1px dashed black;
+	padding: 8px;
+}

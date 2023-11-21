@@ -1,0 +1,8 @@
+lofi-player/node_modules
+lofi-player/dist
+
+# Editor directories and files
+lofi-player/.vscode
+lofi-player/.idea
+
+lofi-player/src-tauri/target/

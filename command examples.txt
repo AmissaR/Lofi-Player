@@ -1,0 +1,38 @@
+$ --list
+[+] music/
+  \
+    [+] aboba.mp3
+    [+] baobab.mp3
+    [+] arthas.mp3
+
+    [ ] music2/
+      \
+        Not included in the queue
+    [+] music3/
+      \
+        [+] aboba.mp3
+        [+] baobab.mp3
+        [+] arthas.mp3
+
+
+
+Отобразить список доступных фонов:
+$ --noise
+[ ] rain.mp3 - 50%
+[+] snow.mp3 - 100%
+[+] fire.mp3 - 20%
+[ ] wind.mp3 - 10%
+
+Включить 1 звук:
+$ --noise --enable rain.mp3 --volume 30
+[+] rain.mp3 - 30% <- enabled
+[+] snow.mp3 - 100%
+[+] fire.mp3 - 20%
+[ ] wind.mp3 - 10%
+
+Выключить 1 звук:
+$ --noise --disable fire.mp3
+[+] rain.mp3 - 30%
+[+] snow.mp3 - 100%
+[ ] fire.mp3 - 20% <- disabled
+[ ] wind.mp3 - 10%
