@@ -1,8 +1,11 @@
+mod tests;
+
 use std::fs;
 use std::path::Path;
 //use rodio;
 
-#[derive(Debug)]
+
+#[derive(Debug, Clone, serde::Serialize)]
 pub struct AudioElement {
     path: String,
     name: String,
@@ -22,7 +25,7 @@ impl AudioElement {
         let is_dir = file.is_dir();
 
         if extension != Some("mp3".as_ref()) && !is_dir {
-            eprintln!("Error: Is not an 'mp3' or dir file.");
+            //eprintln!("Error: Is not an 'mp3' or dir file.");
             return None;
         }
 
@@ -61,7 +64,7 @@ impl AudioElement {
                         }
                     }
                     None => {
-                        eprintln!("Error: Can't create AudioElement object from {:?}!", path);
+                        //eprintln!("Error: Can't create AudioElement object from {:?}!", path);
                     }
                 };
             }
